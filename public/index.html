@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Attendance Monitoring System</h1>
+        <div id="message" class="message hidden"></div>
+        <div class="cards">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="totalCount">0</p>
+            </div>
+            <div class="card present-card">
+                <h3>Present</h3>
+                <p id="presentCount">0</p>
+            </div>
+            <div class="card absent-card">
+                <h3>Absent</h3>
+                <p id="absentCount">0</p>
+            </div>
+            <div class="card">
+                <h3>Attendance Percentage</h3>
+                <p id="percentage">0%</p>
+            </div>
+        </div>
+        <div class="add-student">
+            <input type="text" id="studentName" placeholder="Enter student name">
+            <button id="addBtn" class="btn add-btn" onclick="addStudent()">Add Student</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
